@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "login": "Anmelden",
+    "bookDemo": "Demo buchen",
+    "pricing": "Preise",
+    "features": "Funktionen",
+    "about": "Über uns"
+  },
+  "footer": {
+    "tagline": "Das leichtgewichtige PIM für E-Commerce",
+    "product": {
+      "title": "Produkt",
+      "features": "Funktionen",
+      "pricing": "Preise",
+      "integrations": "Integrationen",
+      "api": "API-Dokumentation"
+    },
+    "company": {
+      "title": "Unternehmen",
+      "about": "Über uns",
+      "blog": "Blog",
+      "careers": "Karriere",
+      "contact": "Kontakt"
+    },
+    "resources": {
+      "title": "Ressourcen"
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "privacy": "Datenschutz",
+      "terms": "AGB",
+      "imprint": "Impressum",
+      "dpa": "AVV",
+      "cookies": "Cookie Policy"
+    },
+    "newsletter": {
+      "title": "Newsletter abonnieren",
+      "description": "Tipps & Updates direkt in Ihr Postfach. Keine Spam, versprochen.",
+      "emailPlaceholder": "ihre-email@firma.de",
+      "subscribe": "Abonnieren",
+      "consentText": "Ich stimme zu, dass meine E-Mail-Adresse gespeichert wird, um mir den Newsletter zu senden. Ich kann mich jederzeit abmelden. Weitere Informationen in unserer",
+      "privacyLink": "Datenschutzerklärung"
+    },
+    "trustBadges": {
+      "gdpr": "DSGVO-konform",
+      "ssl": "SSL Secure",
+      "germany": "🇩🇪 Made in Germany",
+      "eu": "🇪🇺 EU Cloud Hosting"
+    },
+    "social": {
+      "title": "Folgen Sie uns"
+    },
+    "copyright": "© 2025 SlimPIM.ai - Made with ❤️ in Germany"
+  },
+  "problem": {
+    "title": "Kommt Ihnen das bekannt vor?",
+    "subtitle": "Sie sind nicht allein. Tausende E-Commerce-Händler stehen täglich vor diesen Herausforderungen:",
+    "items": [
+      {
+        "title": "10+ Stunden/Woche verschwendet",
+        "description": "Manuelles Synchronisieren von Produkten über Shopify, Amazon, eBay, Etsy. Copy-Paste-Hölle."
+      },
+      {
+        "title": "Excel-Chaos",
+        "description": "1000+ Produkte in Excel verwalten. Formeln brechen, Versionen kollidieren, Daten gehen verloren."
+      },
+      {
+        "title": "Multi-Channel-Albtraum",
+        "description": "Produktdaten inkonsistent über Kanäle. Verschiedene Bilder, Preise, Beschreibungen überall."
+      },
+      {
+        "title": "Varianten-Hölle",
+        "description": "Größe/Farbe-Matrizen sind in Tabellen unmöglich. 100 Varianten = 100 Kopfschmerzen."
+      },
+      {
+        "title": "Bildverwaltungs-Katastrophe",
+        "description": "5.000+ Produktbilder in zufälligen Ordnern. Keine Namenskonvention, keine Organisation."
+      },
+      {
+        "title": "Team-Zusammenarbeit kaputt",
+        "description": "Mehrere Personen bearbeiten dieselbe Tabelle. Konflikte, Überschreibungen, verlorene Arbeit."
+      }
+    ]
+  },
+  "socialProof": {
+    "title": "Vertraut von E-Commerce-Händlern weltweit",
+    "stats": {
+      "sellers": "1.000+ Händler",
+      "products": "5M+ verwaltete Produkte",
+      "channels": "10.000+ Kanal-Verbindungen",
+      "uptime": "99,9% Verfügbarkeit"
+    }
+  },
+  "finalCta": {
+    "title": "Verpassen Sie SlimPIM.ai nicht",
+    "subtitle": "Treten Sie der Warteliste bei und erleben Sie als Erste die Zukunft des Produktmanagements",
+    "cta": "🔔 Benachrichtigen, wenn verfügbar",
+    "benefit1": "Früher Zugang",
+    "benefit2": "Spezielle Launch-Preise",
+    "benefit3": "Exklusive Updates",
+    "urgency": "⏰ Begrenzte Early-Access-Plätze verfügbar",
+    "promise": "Kein Spam, versprochen. Nur Updates über unseren Launch und exklusiven Frühzugang."
+  }
+}

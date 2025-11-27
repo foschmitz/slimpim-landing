@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "login": "Login",
+    "bookDemo": "Book Demo",
+    "pricing": "Pricing",
+    "features": "Features",
+    "about": "About"
+  },
+  "footer": {
+    "tagline": "The Lightweight PIM for E-Commerce",
+    "product": {
+      "title": "Product",
+      "features": "Features",
+      "pricing": "Pricing",
+      "integrations": "Integrations",
+      "api": "API Docs"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "blog": "Blog",
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "resources": {
+      "title": "Resources"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions",
+      "imprint": "Imprint",
+      "dpa": "DPA",
+      "cookies": "Cookie Policy"
+    },
+    "newsletter": {
+      "title": "Subscribe to Newsletter",
+      "description": "Tips & updates directly to your inbox. No spam, promised.",
+      "emailPlaceholder": "your-email@company.com",
+      "subscribe": "Subscribe",
+      "consentText": "I agree that my email address will be stored to send me the newsletter. I can unsubscribe at any time. More information in our",
+      "privacyLink": "Privacy Policy"
+    },
+    "trustBadges": {
+      "gdpr": "GDPR Compliant",
+      "ssl": "SSL Secure",
+      "germany": "🇩🇪 Made in Germany",
+      "eu": "🇪🇺 EU Cloud Hosting"
+    },
+    "social": {
+      "title": "Follow Us"
+    },
+    "copyright": "© 2025 SlimPIM.ai - Made with ❤️ in Germany"
+  },
+  "problem": {
+    "title": "Sound Familiar?",
+    "subtitle": "You're not alone. Thousands of e-commerce sellers face these challenges daily:",
+    "items": [
+      {
+        "title": "10+ Hours/Week Wasted",
+        "description": "Manually syncing products across Shopify, Amazon, eBay, Etsy. Copy-paste hell."
+      },
+      {
+        "title": "Spreadsheet Chaos",
+        "description": "Managing 1000+ products in Excel. Formulas break, versions conflict, data gets lost."
+      },
+      {
+        "title": "Multi-Channel Nightmare",
+        "description": "Product data inconsistent across channels. Different images, prices, descriptions everywhere."
+      },
+      {
+        "title": "Variation Hell",
+        "description": "Size/color matrices are impossible in spreadsheets. 100 variants = 100 headaches."
+      },
+      {
+        "title": "Image Management Disaster",
+        "description": "5,000+ product images in random folders. No naming convention, no organization."
+      },
+      {
+        "title": "Team Collaboration Broken",
+        "description": "Multiple people editing the same spreadsheet. Conflicts, overwrites, lost work."
+      }
+    ]
+  },
+  "socialProof": {
+    "title": "Trusted by E-Commerce Sellers Worldwide",
+    "stats": {
+      "sellers": "1,000+ Sellers",
+      "products": "5M+ Products Managed",
+      "channels": "10,000+ Channel Connections",
+      "uptime": "99.9% Uptime"
+    }
+  },
+  "finalCta": {
+    "title": "Ready to Stop Spreadsheet Chaos?",
+    "subtitle": "Join 1,000+ e-commerce sellers who ditched Excel for SlimPIM",
+    "cta": "Start Free Trial - 14 Days",
+    "subtext": "No credit card required. Cancel anytime. Setup in 5 minutes."
+  }
+}

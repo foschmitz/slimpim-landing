@@ -1,0 +1,14 @@
+{
+  "backToHome": "Zurück zur Startseite",
+  "impressum": {
+    "title": "Impressum",
+    "legalRequirement": "Angaben gemäß § 5 TMG",
+    "contact": "Kontakt",
+    "responsible": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
+    "disputeResolution": "EU-Streitschlichtung",
+    "liability": "Haftungsausschluss"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung"
+  }
+}

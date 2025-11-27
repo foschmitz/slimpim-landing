@@ -1,0 +1,49 @@
+{
+  "sectionBadge": "Features That Really Help",
+  "title": "What's In It For You? Plenty of Time.",
+  "subtitle": "We built SlimPIM so that every feature brings you real value. No unnecessary features – only what you really need.",
+  "cta": {
+    "title": "Convinced? Get Started in 30 Seconds.",
+    "description": "Create your free test account now. No credit card required.",
+    "button": "Try Free Now →",
+    "subtext": "All features available • 14 days free • Cancel anytime"
+  },
+  "items": [
+    {
+      "icon": "🔍",
+      "title": "Smart Search",
+      "description": "Just type \"cash rolls\" instead of searching for complicated article numbers. Our intelligent search understands what you mean.",
+      "outcome": "Save 2 hours/week"
+    },
+    {
+      "icon": "📱",
+      "title": "Mobile-First",
+      "description": "Order on the go from your smartphone. Your branch employees always have access to current product data.",
+      "outcome": "No more questions"
+    },
+    {
+      "icon": "📊",
+      "title": "Auto-Barcodes",
+      "description": "Barcodes are automatically generated and formatted. EAN-13 standard, ready to print.",
+      "outcome": "0 typos"
+    },
+    {
+      "icon": "📄",
+      "title": "PDF Catalogs",
+      "description": "Create professional catalogs with one click. Select categories, design done!",
+      "outcome": "Look more professional"
+    },
+    {
+      "icon": "👥",
+      "title": "Role System",
+      "description": "You decide: Who can edit, who can only view. Full control over your data.",
+      "outcome": "Full control"
+    },
+    {
+      "icon": "🖼️",
+      "title": "Multi-Image",
+      "description": "Upload multiple product photos. Your employees immediately see what's meant – no more confusion.",
+      "outcome": "Fewer mix-ups"
+    }
+  ]
+}

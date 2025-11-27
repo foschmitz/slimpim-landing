@@ -1,0 +1,41 @@
+{
+  "title": "Kommt Ihnen das bekannt vor?",
+  "subtitle": "Viele Einzelhändler kämpfen täglich mit diesen Herausforderungen bei der Verwaltung von Nicht-Handelswaren.",
+  "items": [
+    {
+      "emoji": "😰",
+      "title": "4+ Stunden pro Woche in Excel",
+      "description": "Sie verschwenden wertvolle Zeit mit manuellen Excel-Listen statt sich auf Ihr Kerngeschäft zu konzentrieren."
+    },
+    {
+      "emoji": "🔍",
+      "title": "Artikel-Nummern nirgends gefunden",
+      "description": "Wenn Sie sie brauchen, sind die SKUs nie da. Ständiges Suchen in veralteten Katalogen."
+    },
+    {
+      "emoji": "💸",
+      "title": "Zu viel oder zu wenig bestellt",
+      "description": "Fehlbestellungen führen zu Überbeständen oder kritischen Stockouts. Kein Überblick über den Bedarf."
+    },
+    {
+      "emoji": "📉",
+      "title": "Veraltete Kataloge",
+      "description": "Gedruckte oder PDF-Kataloge sind veraltet, sobald sie erstellt sind. Änderungen erreichen niemanden."
+    },
+    {
+      "emoji": "📱",
+      "title": "Nicht mobil verfügbar",
+      "description": "Ihre Filial-Mitarbeiter können nicht unterwegs auf Produktdaten zugreifen. Alles muss am PC passieren."
+    },
+    {
+      "emoji": "🔄",
+      "title": "Keine Standards",
+      "description": "Jede Filiale bestellt nach Bauchgefühl. Keine einheitlichen Prozesse, keine Kontrolle."
+    }
+  ],
+  "callout": {
+    "emoji": "⏰",
+    "title": "Das kostet Sie nicht nur Zeit, sondern auch Geld.",
+    "description": "Durchschnittlich verlieren Einzelhändler <strong>200+ Stunden pro Jahr</strong> durch ineffiziente Produktdatenverwaltung. Das sind über <strong>8.000€ an Arbeitszeit</strong> – die besser investiert wäre."
+  }
+}

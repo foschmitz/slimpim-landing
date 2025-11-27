@@ -1,0 +1,54 @@
+{
+  "title": "Über uns",
+  "backToHome": "Zurück zur Startseite",
+  "mission": {
+    "title": "Unsere Mission",
+    "content1": "SlimPIM wurde gegründet, um Produktinformations-Management endlich einfach, erschwinglich und effizient zu machen. Wir glauben, dass jedes Unternehmen – egal wie groß – Zugang zu professionellen PIM-Tools haben sollte, ohne dafür ein Vermögen ausgeben zu müssen.",
+    "content2": ""
+  },
+  "team": {
+    "title": "Wer wir sind",
+    "content1": "Wir sind ein junges Startup aus der Region Köln mit jahrzehntelanger Erfahrung in Softwareentwicklung und Softwarearchitektur. Unser Team hat in verschiedenen Branchen wie Einzelhandel und Immobilien komplexe Systeme entwickelt und dabei immer wieder festgestellt: Es fehlt an einfachen, praktischen Lösungen für den Mittelstand.",
+    "content2": "Mit SlimPIM bringen wir diese Erfahrung in ein Produkt, das wirklich hilft – ohne Schnickschnack, ohne unnötige Komplexität."
+  },
+  "expertise": {
+    "title": "Unsere Expertise",
+    "retail": {
+      "title": "Einzelhandel",
+      "description": "Tiefes Verständnis für Handels- und Vertriebsprozesse"
+    },
+    "realEstate": {
+      "title": "Immobilien",
+      "description": "Erfahrung in komplexen Datenmanagement-Systemen"
+    },
+    "architecture": {
+      "title": "Software-Architektur",
+      "description": "Jahrzehntelange Erfahrung in skalierbaren Systemen"
+    }
+  },
+  "values": {
+    "title": "Unsere Werte",
+    "simplicity": {
+      "title": "Einfachheit:",
+      "description": "Komplexität ist der Feind von Produktivität. Wir bauen Software, die jeder versteht."
+    },
+    "transparency": {
+      "title": "Transparenz:",
+      "description": "Keine versteckten Kosten, keine Überraschungen. Fair und ehrlich."
+    },
+    "customerFocus": {
+      "title": "Kundennähe:",
+      "description": "Wir hören zu und entwickeln Features, die wirklich gebraucht werden."
+    }
+  },
+  "location": {
+    "title": "Standort",
+    "region": "Region Köln, Deutschland",
+    "badges": "🇩🇪 Made in Germany • 🇪🇺 DSGVO-konform • Hosting in der EU"
+  },
+  "contactCta": {
+    "title": "Haben Sie Fragen oder Anregungen?",
+    "description": "Wir freuen uns von Ihnen zu hören. Schreiben Sie uns eine E-Mail.",
+    "email": "info@slimpim.ai"
+  }
+}

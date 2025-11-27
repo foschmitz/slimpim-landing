@@ -1,0 +1,37 @@
+{
+  "title": "SlimPIM löst genau diese Probleme.",
+  "subtitle": "Eine einfache, intuitive Lösung für die Verwaltung aller Nicht-Handelswaren – ohne IT-Abteilung, ohne Schulung, ohne Kopfschmerzen.",
+  "items": [
+    {
+      "title": "Zentrale Verwaltung aller Artikel",
+      "description": "Eine einzige Datenbank für alle Nicht-Handelswaren. Keine doppelten Einträge, keine veralteten Listen mehr."
+    },
+    {
+      "title": "Blitzschnelle Suche (< 1 Sekunde)",
+      "description": "Intelligente Suche findet Ihre Artikel sofort – egal ob Sie nach Name, SKU oder Kategorie suchen."
+    },
+    {
+      "title": "Mobile-First Design (Smartphone-ready)",
+      "description": "Perfekt optimiert für Smartphones und Tablets. Ihre Mitarbeiter können überall zugreifen."
+    },
+    {
+      "title": "Automatische Kataloge (PDF in 1 Klick)",
+      "description": "Generieren Sie professionelle PDF-Kataloge mit einem Klick. Immer aktuell, immer verfügbar."
+    },
+    {
+      "title": "100% DSGVO-konform (EU-Hosting)",
+      "description": "Ihre Daten bleiben in Deutschland. Hosting in zertifizierten EU-Rechenzentren."
+    }
+  ],
+  "dashboard": {
+    "title": "SlimPIM Dashboard",
+    "stats": {
+      "articles": "Artikel",
+      "categories": "Kategorien",
+      "users": "Nutzer"
+    },
+    "recentSearches": "Letzte Suchen",
+    "badge": "✨ Einfach & Intuitiv"
+  },
+  "cta": "Jetzt kostenlos testen →"
+}

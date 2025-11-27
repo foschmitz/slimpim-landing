@@ -1,0 +1,15 @@
+# SlimPIM Robots.txt
+# https://slimpim.ai/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow admin/internal pages (if any)
+# Disallow: /admin/
+
+# Sitemap
+Sitemap: https://slimpim.ai/sitemap.xml
+
+# Crawl-delay for specific bots (optional)
+# User-agent: Googlebot
+# Crawl-delay: 0

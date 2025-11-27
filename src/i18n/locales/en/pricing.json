@@ -1,0 +1,88 @@
+{
+  "title": "Simple, Transparent Pricing",
+  "subtitle": "Start free, upgrade as you grow. No hidden fees.",
+  "tiers": [
+    {
+      "name": "Starter",
+      "price": "€49",
+      "period": "/month",
+      "description": "Perfect for new sellers getting started",
+      "features": [
+        "Up to 1,000 products",
+        "2 sales channels",
+        "Basic image management",
+        "CSV import/export",
+        "Email support"
+      ],
+      "cta": "Start Free Trial"
+    },
+    {
+      "name": "Growth",
+      "price": "€99",
+      "period": "/month",
+      "description": "For growing businesses scaling fast",
+      "features": [
+        "Up to 5,000 products",
+        "Unlimited sales channels",
+        "Advanced image optimization",
+        "API access",
+        "Priority support",
+        "Product variations"
+      ],
+      "cta": "Start Free Trial",
+      "highlighted": true
+    },
+    {
+      "name": "Pro",
+      "price": "€199",
+      "period": "/month",
+      "description": "For established sellers at scale",
+      "features": [
+        "Up to 25,000 products",
+        "Unlimited everything",
+        "Advanced API access",
+        "Priority support (2h response)",
+        "Custom integrations",
+        "Dedicated account manager"
+      ],
+      "cta": "Start Free Trial"
+    },
+    {
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "",
+      "description": "For large organizations",
+      "features": [
+        "Unlimited products",
+        "White-label solution",
+        "SLA guarantee",
+        "Custom features",
+        "On-premise option",
+        "24/7 phone support"
+      ],
+      "cta": "Contact Sales"
+    }
+  ],
+  "guarantee": "30-day money-back guarantee. No questions asked.",
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Can I cancel anytime?",
+        "answer": "Yes, absolutely. You can cancel your subscription at any time with one click. No lock-in contracts."
+      },
+      {
+        "question": "Do you offer a free trial?",
+        "answer": "Yes! We offer a 14-day free trial with full access to all features. No credit card required."
+      },
+      {
+        "question": "Which platforms do you integrate with?",
+        "answer": "We integrate with Shopify, WooCommerce, Amazon, eBay, Etsy, Kaufland.de, and many more. Custom integrations available on Pro plan."
+      },
+      {
+        "question": "Is my data secure?",
+        "answer": "Yes. We use bank-level encryption (AES-256), GDPR-compliant hosting in Germany, and regular security audits."
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "badge": "Preise",
+  "title": "Wettbewerbsfähige Preise",
+  "subtitle": "Wir glauben, dass großartige Produktmanagement-Tools für jeden erschwinglich sein sollten. Unsere Preise werden transparent und fair sein.",
+  "promise1Title": "Fair & Transparent",
+  "promise1Desc": "Keine versteckten Gebühren, keine Überraschungen. Einfache, vorhersehbare Preise.",
+  "promise2Title": "Bestes Preis-Leistungs-Verhältnis",
+  "promise2Desc": "Premium-Funktionen zu einem Bruchteil der Kosten von Enterprise-PIM-Systemen.",
+  "promise3Title": "Flexible Tarife",
+  "promise3Desc": "Vom Startup bis zum Konzern haben wir einen Tarif, der zu Ihren Anforderungen passt.",
+  "ctaTitle": "Möchten Sie unsere Preise erfahren?",
+  "ctaSubtitle": "Lassen Sie sich benachrichtigen, wenn wir starten, und sehen Sie als Erste unsere wettbewerbsfähigen Preispläne",
+  "ctaButton": "🔔 Benachrichtigen",
+  "tiers": [
+    {
+      "name": "Starter",
+      "price": "€49",
+      "period": "/Monat",
+      "description": "Perfekt für neue Verkäufer",
+      "features": [
+        "Bis 1.000 Produkte",
+        "2 Verkaufskanäle",
+        "Basis-Bildverwaltung",
+        "CSV Import/Export",
+        "E-Mail-Support"
+      ],
+      "cta": "Kostenlos testen"
+    },
+    {
+      "name": "Growth",
+      "price": "€99",
+      "period": "/Monat",
+      "description": "Für wachsende Unternehmen",
+      "features": [
+        "Bis 5.000 Produkte",
+        "Unbegrenzte Verkaufskanäle",
+        "Erweiterte Bildoptimierung",
+        "API-Zugang",
+        "Priority-Support",
+        "Produktvarianten"
+      ],
+      "cta": "Kostenlos testen",
+      "highlighted": true
+    },
+    {
+      "name": "Pro",
+      "price": "€199",
+      "period": "/Monat",
+      "description": "Für etablierte Verkäufer",
+      "features": [
+        "Bis 25.000 Produkte",
+        "Alles unbegrenzt",
+        "Erweiterter API-Zugang",
+        "Priority-Support (2h Antwort)",
+        "Kundenspezifische Integrationen",
+        "Dedizierter Account Manager"
+      ],
+      "cta": "Kostenlos testen"
+    },
+    {
+      "name": "Enterprise",
+      "price": "Individuell",
+      "period": "",
+      "description": "Für große Organisationen",
+      "features": [
+        "Unbegrenzte Produkte",
+        "White-Label-Lösung",
+        "SLA-Garantie",
+        "Kundenspezifische Features",
+        "On-Premise-Option",
+        "24/7 Telefon-Support"
+      ],
+      "cta": "Vertrieb kontaktieren"
+    }
+  ],
+  "guarantee": "30 Tage Geld-zurück-Garantie. Ohne Wenn und Aber.",
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "question": "Kann ich jederzeit kündigen?",
+        "answer": "Ja, absolut. Sie können Ihr Abonnement jederzeit mit einem Klick kündigen. Keine Vertragsbindung."
+      },
+      {
+        "question": "Bieten Sie eine kostenlose Testversion an?",
+        "answer": "Ja! Wir bieten eine 14-tägige kostenlose Testversion mit vollem Zugriff auf alle Funktionen. Keine Kreditkarte erforderlich."
+      },
+      {
+        "question": "Mit welchen Plattformen integrieren Sie?",
+        "answer": "Wir integrieren mit Shopify, WooCommerce, Amazon, eBay, Etsy, Kaufland.de und vielen mehr. Kundenspezifische Integrationen im Pro-Plan verfügbar."
+      },
+      {
+        "question": "Sind meine Daten sicher?",
+        "answer": "Ja. Wir verwenden Bank-Level-Verschlüsselung (AES-256), DSGVO-konformes Hosting in Deutschland und regelmäßige Sicherheitsaudits."
+      }
+    ]
+  }
+}

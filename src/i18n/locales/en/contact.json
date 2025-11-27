@@ -1,0 +1,41 @@
+{
+  "title": "Contact",
+  "backToHome": "Back to Home",
+  "intro": "Have questions about SlimPIM? Want to learn more about our solution or give feedback? We'd love to hear from you!",
+  "contactMethods": {
+    "title": "How to Reach Us",
+    "email": {
+      "title": "Email",
+      "address": "info@slimpim.ai",
+      "responseTime": "We typically respond within 24 hours"
+    },
+    "location": {
+      "title": "Location",
+      "region": "Cologne Region, Germany",
+      "badges": "🇩🇪 Made in Germany • 🇪🇺 GDPR Compliant"
+    }
+  },
+  "contactCta": {
+    "title": "Have Questions or Suggestions?",
+    "description": "We'd love to hear from you. Send us an email.",
+    "email": "info@slimpim.ai"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "When will SlimPIM be available?",
+        "answer": "We're working hard on the launch. Sign up for our waiting list to be notified first."
+      },
+      {
+        "question": "Do you offer a free trial?",
+        "answer": "Yes! After launch, you can test SlimPIM for 14 days free and without obligation."
+      },
+      {
+        "question": "Is my data safe?",
+        "answer": "Absolutely. We host exclusively in the EU, are GDPR compliant, and use state-of-the-art security standards."
+      }
+    ],
+    "moreQuestions": "More questions? Send us an email at"
+  }
+}

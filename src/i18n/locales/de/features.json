@@ -1,0 +1,49 @@
+{
+  "sectionBadge": "Features, die wirklich helfen",
+  "title": "Was bringt's Ihnen? Jede Menge Zeit.",
+  "subtitle": "Wir haben SlimPIM so gebaut, dass jede Funktion Ihnen echten Mehrwert bringt. Keine unnötigen Features – nur das, was Sie wirklich brauchen.",
+  "cta": {
+    "title": "Überzeugt? Starten Sie in 30 Sekunden.",
+    "description": "Erstellen Sie jetzt Ihren kostenlosen Test-Account. Keine Kreditkarte nötig.",
+    "button": "Jetzt kostenlos testen →",
+    "subtext": "Alle Features verfügbar • 14 Tage gratis • Jederzeit kündbar"
+  },
+  "items": [
+    {
+      "icon": "🔍",
+      "title": "Smart Search",
+      "description": "Tippen Sie einfach \"Kassenrollen\" statt komplizierte Artikel-Nummern zu suchen. Unsere intelligente Suche versteht, was Sie meinen.",
+      "outcome": "Spare 2 Stunden/Woche"
+    },
+    {
+      "icon": "📱",
+      "title": "Mobile-First",
+      "description": "Bestellen Sie auch unterwegs vom Smartphone. Ihre Filial-Mitarbeiter haben immer Zugriff auf aktuelle Produktdaten.",
+      "outcome": "Keine Rückfragen mehr"
+    },
+    {
+      "icon": "📊",
+      "title": "Auto-Barcodes",
+      "description": "Barcodes werden automatisch generiert und formatiert. EAN-13 Standard, druckbereit.",
+      "outcome": "0 Tippfehler"
+    },
+    {
+      "icon": "📄",
+      "title": "PDF-Kataloge",
+      "description": "Erstellen Sie professionelle Kataloge mit einem Klick. Wählen Sie Kategorien, Design fertig!",
+      "outcome": "Professioneller wirken"
+    },
+    {
+      "icon": "👥",
+      "title": "Rollen-System",
+      "description": "Bestimmen Sie selbst: Wer darf bearbeiten, wer nur ansehen. Volle Kontrolle über Ihre Daten.",
+      "outcome": "Volle Kontrolle"
+    },
+    {
+      "icon": "🖼️",
+      "title": "Multi-Image",
+      "description": "Laden Sie mehrere Produktfotos hoch. Ihre Mitarbeiter sehen sofort, was gemeint ist – keine Verwechslungen mehr.",
+      "outcome": "Weniger Verwechslungen"
+    }
+  ]
+}

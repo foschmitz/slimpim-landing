@@ -1,0 +1,37 @@
+{
+  "title": "SlimPIM solves exactly these problems.",
+  "subtitle": "A simple, intuitive solution for managing all non-merchandise products – without an IT department, without training, without headaches.",
+  "items": [
+    {
+      "title": "Central Management of All Articles",
+      "description": "A single database for all non-merchandise products. No duplicate entries, no more outdated lists."
+    },
+    {
+      "title": "Lightning-Fast Search (< 1 second)",
+      "description": "Intelligent search finds your articles instantly – whether you search by name, SKU, or category."
+    },
+    {
+      "title": "Mobile-First Design (Smartphone-ready)",
+      "description": "Perfectly optimized for smartphones and tablets. Your employees can access anywhere."
+    },
+    {
+      "title": "Automatic Catalogs (PDF in 1 click)",
+      "description": "Generate professional PDF catalogs with one click. Always up-to-date, always available."
+    },
+    {
+      "title": "100% GDPR Compliant (EU Hosting)",
+      "description": "Your data stays in Germany. Hosting in certified EU data centers."
+    }
+  ],
+  "dashboard": {
+    "title": "SlimPIM Dashboard",
+    "stats": {
+      "articles": "Articles",
+      "categories": "Categories",
+      "users": "Users"
+    },
+    "recentSearches": "Recent Searches",
+    "badge": "✨ Simple & Intuitive"
+  },
+  "cta": "Try Free Now →"
+}

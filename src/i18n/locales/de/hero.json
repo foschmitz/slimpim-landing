@@ -1,0 +1,27 @@
+{
+  "comingSoonBadge": "Demnächst verfügbar",
+  "headline": "Schluss mit Excel-Chaos.",
+  "headlineHighlight": "5.000+ Produkte über alle Kanäle verwalten.",
+  "subheadline": "Das leichtgewichtige PIM für E-Commerce & Multi-Channel. Produkte von einem Ort zu Shopify, WooCommerce, Amazon synchronisieren.",
+  "cta": {
+    "primary": "🔔 Benachrichtigen, wenn verfügbar",
+    "secondary": "Demo buchen"
+  },
+  "ctaSubtext": "Seien Sie unter den Ersten, die die Zukunft des Produktmanagements erleben",
+  "stats": {
+    "ai": "Intelligente Automatisierung",
+    "simple": "Keine Komplexität",
+    "affordable": "Wettbewerbsfähige Preise"
+  },
+  "trustBadges": {
+    "trial": "14 Tage gratis",
+    "noCard": "Keine Kreditkarte",
+    "cancel": "Jederzeit kündbar",
+    "gdpr": "DSGVO-konform"
+  },
+  "mockDashboard": {
+    "title": "Artikel-Übersicht",
+    "searchPlaceholder": "Suche: \"Laufschuhe\"",
+    "searchButton": "Suchen"
+  }
+}

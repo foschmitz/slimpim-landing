@@ -1,0 +1,54 @@
+{
+  "title": "About Us",
+  "backToHome": "Back to Home",
+  "mission": {
+    "title": "Our Mission",
+    "content1": "SlimPIM was founded to finally make Product Information Management simple, affordable, and efficient. We believe that every company – no matter the size – should have access to professional PIM tools without spending a fortune.",
+    "content2": ""
+  },
+  "team": {
+    "title": "Who We Are",
+    "content1": "We are a young startup from the Cologne area with decades of experience in software development and software architecture. Our team has developed complex systems in various industries such as retail and real estate, and repeatedly found: there is a lack of simple, practical solutions for medium-sized businesses.",
+    "content2": "With SlimPIM, we bring this experience into a product that really helps – without frills, without unnecessary complexity."
+  },
+  "expertise": {
+    "title": "Our Expertise",
+    "retail": {
+      "title": "Retail",
+      "description": "Deep understanding of retail and distribution processes"
+    },
+    "realEstate": {
+      "title": "Real Estate",
+      "description": "Experience in complex data management systems"
+    },
+    "architecture": {
+      "title": "Software Architecture",
+      "description": "Decades of experience in scalable systems"
+    }
+  },
+  "values": {
+    "title": "Our Values",
+    "simplicity": {
+      "title": "Simplicity:",
+      "description": "Complexity is the enemy of productivity. We build software that everyone understands."
+    },
+    "transparency": {
+      "title": "Transparency:",
+      "description": "No hidden costs, no surprises. Fair and honest."
+    },
+    "customerFocus": {
+      "title": "Customer Focus:",
+      "description": "We listen and develop features that are truly needed."
+    }
+  },
+  "location": {
+    "title": "Location",
+    "region": "Cologne Region, Germany",
+    "badges": "🇩🇪 Made in Germany • 🇪🇺 GDPR Compliant • EU Hosting"
+  },
+  "contactCta": {
+    "title": "Have Questions or Suggestions?",
+    "description": "We'd love to hear from you. Send us an email.",
+    "email": "info@slimpim.ai"
+  }
+}

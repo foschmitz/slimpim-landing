@@ -1,0 +1,20 @@
+{
+  "headline": "Stop Spreadsheet Chaos.",
+  "headlineHighlight": "Manage 5,000+ Products Across All Channels.",
+  "subheadline": "The Lightweight PIM for E-Commerce & Multi-Channel Sellers. Sync products to Shopify, WooCommerce, Amazon from one place.",
+  "cta": {
+    "primary": "Start Free Trial →",
+    "secondary": "Book Demo"
+  },
+  "trustBadges": {
+    "trial": "14-day free trial",
+    "noCard": "No credit card required",
+    "cancel": "Cancel anytime",
+    "gdpr": "GDPR compliant"
+  },
+  "mockDashboard": {
+    "title": "Product Overview",
+    "searchPlaceholder": "Search: \"Running Shoes\"",
+    "searchButton": "Search"
+  }
+}

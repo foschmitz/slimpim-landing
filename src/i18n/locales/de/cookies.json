@@ -1,0 +1,43 @@
+{
+  "banner": {
+    "title": "Cookie-Einstellungen",
+    "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Sie können alle Cookies akzeptieren oder Ihre Einstellungen anpassen.",
+    "acceptAll": "Alle akzeptieren",
+    "rejectAll": "Alle ablehnen",
+    "customize": "Anpassen",
+    "privacyLink": "Datenschutzerklärung"
+  },
+  "categories": {
+    "necessary": {
+      "name": "Notwendige Cookies",
+      "description": "Für die Funktion der Website erforderlich. Diese können nicht deaktiviert werden."
+    },
+    "functional": {
+      "name": "Funktionale Cookies",
+      "description": "Speichern Ihre Einstellungen wie Sprache und Region."
+    },
+    "analytics": {
+      "name": "Analyse-Cookies",
+      "description": "Helfen uns zu verstehen, wie Sie unsere Website nutzen, um Ihr Erlebnis zu verbessern."
+    },
+    "marketing": {
+      "name": "Marketing-Cookies",
+      "description": "Werden verwendet, um personalisierte Werbung zu liefern."
+    },
+    "external": {
+      "name": "Externe Medien",
+      "description": "Erlauben eingebettete Inhalte von Drittanbietern."
+    }
+  },
+  "modal": {
+    "title": "Cookie-Einstellungen",
+    "description": "Wir respektieren Ihre Privatsphäre. Wählen Sie, welche Cookies Sie zulassen möchten.",
+    "save": "Einstellungen speichern",
+    "acceptAll": "Alle akzeptieren",
+    "rejectAll": "Alle ablehnen",
+    "close": "Schließen"
+  },
+  "settings": {
+    "link": "Cookie-Einstellungen"
+  }
+}

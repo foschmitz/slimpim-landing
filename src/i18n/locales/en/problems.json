@@ -1,0 +1,41 @@
+{
+  "title": "Does This Sound Familiar?",
+  "subtitle": "Many retailers struggle daily with these challenges when managing non-merchandise products.",
+  "items": [
+    {
+      "emoji": "😰",
+      "title": "4+ Hours Per Week in Excel",
+      "description": "You waste valuable time on manual Excel lists instead of focusing on your core business."
+    },
+    {
+      "emoji": "🔍",
+      "title": "Article Numbers Never Found",
+      "description": "When you need them, SKUs are never there. Constant searching in outdated catalogs."
+    },
+    {
+      "emoji": "💸",
+      "title": "Over or Under Ordering",
+      "description": "Ordering mistakes lead to excess inventory or critical stockouts. No overview of demand."
+    },
+    {
+      "emoji": "📉",
+      "title": "Outdated Catalogs",
+      "description": "Printed or PDF catalogs are outdated as soon as they're created. Changes reach nobody."
+    },
+    {
+      "emoji": "📱",
+      "title": "Not Mobile Accessible",
+      "description": "Your branch employees can't access product data on the go. Everything must happen at the PC."
+    },
+    {
+      "emoji": "🔄",
+      "title": "No Standards",
+      "description": "Each branch orders by gut feeling. No uniform processes, no control."
+    }
+  ],
+  "callout": {
+    "emoji": "⏰",
+    "title": "This costs you not only time, but also money.",
+    "description": "On average, retailers lose <strong>200+ hours per year</strong> due to inefficient product data management. That's over <strong>€8,000 in labor costs</strong> – which could be better invested."
+  }
+}
