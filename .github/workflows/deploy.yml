@@ -8,7 +8,7 @@ on:
 
 env:
   NODE_VERSION: '20'
-  PROJECT_ID: slimpim
+  PROJECT_ID: slimpim-landing-page
 
 jobs:
   # Lint and test landing page
