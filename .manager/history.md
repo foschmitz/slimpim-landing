@@ -6,6 +6,14 @@
 
 ### November
 
+#### 2025-11-29: Admin Email Notification bei Signups
+
+- **Branch:** feature/admin-email-notify
+- **Worktree:** ../slimpim-landing-admin-notify
+- **Commits:** 1 commit
+- **Beschreibung:** Bei Newsletter/Notify-Me Signups wird info@slimpim.ai benachrichtigt
+- **Merge-Typ:** Fast-forward
+
 #### 2025-11-29: Fix GitHub Actions für Resend
 
 - **Branch:** feature/fix-github-actions
