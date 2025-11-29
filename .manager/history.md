@@ -6,6 +6,14 @@
 
 ### November
 
+#### 2025-11-29: Fix GitHub Actions für Resend
+
+- **Branch:** feature/fix-github-actions
+- **Worktree:** ../slimpim-landing-github-actions
+- **Commits:** 1 commit
+- **Beschreibung:** GitHub Actions Workflow aktualisiert - Gmail-Secrets durch Resend-Secrets ersetzt
+- **Merge-Typ:** Fast-forward
+
 #### 2025-11-29: Email Service Migration zu Resend
 
 - **Branch:** feature/resend-email
