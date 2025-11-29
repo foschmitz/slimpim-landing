@@ -187,6 +187,108 @@ The SlimPIM.ai Team
 }
 
 /**
+ * Send notification email to admin when a new user signs up
+ *
+ * @param {string} userEmail - User's email address
+ * @param {string} userName - User's name
+ * @param {string} type - Type of signup ('notify-me' or 'newsletter')
+ * @returns {Promise<boolean>} Success status
+ */
+async function sendAdminNotificationEmail(userEmail: string, userName: string, type: string): Promise<boolean> {
+  const adminEmail = 'info@slimpim.ai';
+
+  try {
+    const resend = getResendClient();
+    const fromAddress = emailFromAddress.value() || 'noreply@slimpim.ai';
+    const fromName = emailFromName.value() || 'SlimPIM';
+
+    const isNotifyMe = type === 'notify-me';
+    const signupType = isNotifyMe ? 'Waiting List' : 'Newsletter';
+    const subject = `🎉 New ${signupType} Signup: ${userName}`;
+
+    const htmlContent = `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+        <div style="background-color: #10b981; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0;">
+          <h1 style="margin: 0;">New Signup!</h1>
+        </div>
+
+        <div style="padding: 30px; background-color: #f9fafb;">
+          <h2 style="color: #1f2937; margin-top: 0;">📬 ${signupType} Signup</h2>
+
+          <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+              <td style="padding: 10px; border-bottom: 1px solid #e5e7eb; font-weight: bold; color: #374151;">Name:</td>
+              <td style="padding: 10px; border-bottom: 1px solid #e5e7eb; color: #6b7280;">${userName}</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border-bottom: 1px solid #e5e7eb; font-weight: bold; color: #374151;">Email:</td>
+              <td style="padding: 10px; border-bottom: 1px solid #e5e7eb; color: #6b7280;">${userEmail}</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border-bottom: 1px solid #e5e7eb; font-weight: bold; color: #374151;">Type:</td>
+              <td style="padding: 10px; border-bottom: 1px solid #e5e7eb; color: #6b7280;">${signupType}</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; font-weight: bold; color: #374151;">Time:</td>
+              <td style="padding: 10px; color: #6b7280;">${new Date().toISOString()}</td>
+            </tr>
+          </table>
+        </div>
+
+        <div style="background-color: #1f2937; color: #9ca3af; padding: 15px; text-align: center; font-size: 12px; border-radius: 0 0 8px 8px;">
+          <p style="margin: 0;">SlimPIM.ai Admin Notification</p>
+        </div>
+      </div>
+    `;
+
+    const textContent = `
+New ${signupType} Signup!
+
+Name: ${userName}
+Email: ${userEmail}
+Type: ${signupType}
+Time: ${new Date().toISOString()}
+
+---
+SlimPIM.ai Admin Notification
+    `;
+
+    const { data, error } = await resend.emails.send({
+      from: `${fromName} <${fromAddress}>`,
+      to: adminEmail,
+      subject,
+      html: htmlContent,
+      text: textContent
+    });
+
+    if (error) {
+      logger.error('Failed to send admin notification email', {
+        error: error.message,
+        userEmail,
+        type
+      });
+      return false;
+    }
+
+    logger.info('Admin notification email sent', {
+      messageId: data?.id,
+      userEmail,
+      type
+    });
+
+    return true;
+  } catch (error) {
+    const err = error as Error;
+    logger.error('Failed to send admin notification email', {
+      error: err.message,
+      userEmail,
+      type
+    });
+    return false;
+  }
+}
+
+/**
  * Handle "Notify Me" signup from landing page modal
  *
  * @route POST /api/v1/notify-signup
@@ -272,6 +374,9 @@ export const notifySignup = onRequest(
       // Send confirmation email to the user
       await sendUserConfirmationEmail(createContact.email, validName, 'notify-me');
 
+      // Send notification to admin
+      await sendAdminNotificationEmail(createContact.email, validName, 'notify-me');
+
       res.status(200).json({
         success: true,
         message: 'Thank you for signing up! Check your email for confirmation.'
@@ -283,6 +388,8 @@ export const notifySignup = onRequest(
         logger.info('Contact already exists', { email: validEmail });
         // Still send confirmation email even if contact exists
         await sendUserConfirmationEmail(validEmail, validName, 'notify-me');
+        // Still notify admin about the signup attempt
+        await sendAdminNotificationEmail(validEmail, validName, 'notify-me');
         res.status(200).json({
           success: true,
           message: 'Thank you for signing up! Check your email for confirmation.'
@@ -388,6 +495,9 @@ export const newsletterSubscribe = onRequest(
       const userName = validEmail.split('@')[0]; // Use part before @ as fallback name
       await sendUserConfirmationEmail(createContact.email, userName, validListType);
 
+      // Send notification to admin
+      await sendAdminNotificationEmail(createContact.email, userName, validListType);
+
       res.status(200).json({
         success: true,
         message: 'Successfully subscribed to newsletter!'
@@ -400,6 +510,8 @@ export const newsletterSubscribe = onRequest(
         // Still send confirmation email even if contact exists
         const userName = validEmail.split('@')[0];
         await sendUserConfirmationEmail(validEmail, userName, validListType);
+        // Still notify admin about the signup attempt
+        await sendAdminNotificationEmail(validEmail, userName, validListType);
         res.status(200).json({
           success: true,
           message: 'Successfully subscribed to newsletter!'
