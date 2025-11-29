@@ -8,36 +8,28 @@ import { onRequest } from 'firebase-functions/v2/https';
 import { logger } from 'firebase-functions/v2';
 import { defineString } from 'firebase-functions/params';
 import * as brevo from '@getbrevo/brevo';
-import * as nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 
 // Define environment parameters (will be set during deployment)
 const brevoApiKey = defineString('BREVO_API_KEY');
 const brevoNotifyMeListId = defineString('BREVO_NOTIFY_ME_LIST_ID');
 const brevoNewsletterListId = defineString('BREVO_NEWSLETTER_LIST_ID');
-const gmailUser = defineString('GMAIL_USER');
-const gmailAppPassword = defineString('GMAIL_APP_PASSWORD');
+const resendApiKey = defineString('RESEND_API_KEY');
+const emailFromAddress = defineString('EMAIL_FROM_ADDRESS');
+const emailFromName = defineString('EMAIL_FROM_NAME');
 
 /**
- * Create nodemailer transporter for sending emails via Gmail
+ * Create Resend client for sending emails
  *
- * @returns {nodemailer.Transporter} Configured transporter
- * @throws {Error} When Gmail credentials are not configured
+ * @returns {Resend} Configured Resend client
+ * @throws {Error} When RESEND_API_KEY is not configured
  */
-function createEmailTransporter(): nodemailer.Transporter {
-  const user = gmailUser.value();
-  const password = gmailAppPassword.value();
-
-  if (!user || !password) {
-    throw new Error('Gmail credentials not configured. Set GMAIL_USER and GMAIL_APP_PASSWORD environment variables.');
+function getResendClient(): Resend {
+  const apiKey = resendApiKey.value();
+  if (!apiKey) {
+    throw new Error('RESEND_API_KEY not configured');
   }
-
-  return nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user,
-      pass: password
-    }
-  });
+  return new Resend(apiKey);
 }
 
 /**
@@ -50,19 +42,16 @@ function createEmailTransporter(): nodemailer.Transporter {
  */
 async function sendUserConfirmationEmail(email: string, name: string, type: string): Promise<boolean> {
   try {
-    const transporter = createEmailTransporter();
-    const fromEmail = gmailUser.value();
+    const resend = getResendClient();
+    const fromAddress = emailFromAddress.value() || 'noreply@slimpim.ai';
+    const fromName = emailFromName.value() || 'SlimPIM';
 
     const isNotifyMe = type === 'notify-me';
     const subject = isNotifyMe
       ? '✅ Welcome to the SlimPIM.ai Waiting List!'
       : '✅ Thank you for subscribing!';
 
-    const mailOptions = {
-      from: fromEmail || 'noreply@slimpim.ai',
-      to: email,
-      subject,
-      html: `
+    const htmlContent = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background-color: #2563eb; color: white; padding: 30px;
             text-align: center; border-radius: 8px 8px 0 0;">
@@ -130,8 +119,9 @@ async function sendUserConfirmationEmail(email: string, name: string, type: stri
             <p style="margin: 0;">© 2025 SlimPIM.ai - Made with ❤️ in Germany</p>
           </div>
         </div>
-      `,
-      text: `
+      `;
+
+    const textContent = `
 Hi ${name}!
 
 ${
@@ -159,23 +149,30 @@ The SlimPIM.ai Team
 
 ---
 © 2025 SlimPIM.ai - Made with ❤️ in Germany
-      `
-    };
+      `;
 
-    const info = await transporter.sendMail(mailOptions);
+    const { data, error } = await resend.emails.send({
+      from: `${fromName} <${fromAddress}>`,
+      to: email,
+      subject,
+      html: htmlContent,
+      text: textContent
+    });
 
-    if (info.response) {
-      logger.info('Confirmation email sent', {
-        messageId: info.messageId,
-        to: email,
+    if (error) {
+      logger.error('Failed to send confirmation email', {
+        error: error.message,
+        email,
         type
       });
-    } else if (info.message) {
-      logger.info('Email would be sent (dev mode)', {
-        to: email,
-        type
-      });
+      return false;
     }
+
+    logger.info('Confirmation email sent', {
+      messageId: data?.id,
+      to: email,
+      type
+    });
 
     return true;
   } catch (error) {
