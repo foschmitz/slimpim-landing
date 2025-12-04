@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Footer: React.FC = () => {
-  const { t } = useTranslation('common');
+  const { t, i18n } = useTranslation('common');
+  const currentLang = i18n.language?.startsWith('de') ? 'de' : 'en';
   const [email, setEmail] = useState('');
   const [consent, setConsent] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -66,7 +67,8 @@ const Footer: React.FC = () => {
     resources: {
       title: t('footer.resources.title', 'Resources'),
       links: [
-        { label: t('footer.product.api'), href: 'https://slimpim.ai/api-docs', isRoute: false }
+        { label: t('footer.product.docs'), href: `https://app.slimpim.ai/${currentLang}/docs`, isRoute: false },
+        { label: t('footer.product.api'), href: 'https://app.slimpim.ai/api-docs', isRoute: false }
       ]
     },
     legal: {
