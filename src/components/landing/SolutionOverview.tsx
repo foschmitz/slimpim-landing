@@ -110,9 +110,14 @@ const SolutionOverview: React.FC = () => {
 
             {/* CTA */}
             <div className="mt-8">
-              <button className="btn-primary w-full md:w-auto text-lg">
+              <a
+                href="https://app.slimpim.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary w-full md:w-auto text-lg inline-block text-center"
+              >
                 {t('cta')}
-              </button>
+              </a>
             </div>
           </div>
         </div>

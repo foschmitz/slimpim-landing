@@ -2,11 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../LanguageSwitcher';
 
-interface HeroSectionProps {
-  onNotifyClick: () => void;
-}
-
-const HeroSection: React.FC<HeroSectionProps> = ({ onNotifyClick }) => {
+const HeroSection: React.FC = () => {
   const { t } = useTranslation(['hero', 'common']);
 
   return (
@@ -28,10 +24,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onNotifyClick }) => {
 
         {/* Hero Content */}
         <div className="max-w-4xl mx-auto text-center">
-          {/* Coming Soon Badge */}
+          {/* Beta Badge */}
           <div className="inline-block mb-6">
             <div className="bg-accent/10 text-accent px-6 py-2 rounded-full text-sm font-semibold">
-              {t('hero:comingSoonBadge', 'Coming Soon')}
+              {t('hero:betaBadge', 'Beta Available')}
             </div>
           </div>
 
@@ -48,16 +44,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onNotifyClick }) => {
 
           {/* Primary CTA */}
           <div className="space-y-6 mb-12">
-            <button
-              onClick={onNotifyClick}
-              className="btn-primary text-lg px-12 py-6 text-xl font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all"
+            <a
+              href="https://app.slimpim.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary text-lg px-12 py-6 text-xl font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all inline-block"
             >
-              {t('hero:cta.primary', '🔔 Notify Me When Available')}
-            </button>
+              {t('hero:cta.primary', '🚀 Try Beta Now')}
+            </a>
 
             {/* Trust Line */}
             <p className="text-sm text-gray-500">
-              {t('hero:ctaSubtext', 'Be among the first to experience the future of product management')}
+              {t('hero:ctaSubtext', 'Join our beta and help shape the future of product management')}
             </p>
           </div>
 

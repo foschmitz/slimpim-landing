@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 import HeroSection from '../components/landing/HeroSection';
@@ -8,19 +8,9 @@ import FeaturesSection from '../components/landing/FeaturesSection';
 import PricingSection from '../components/landing/PricingSection';
 import FinalCTA from '../components/landing/FinalCTA';
 import Footer from '../components/landing/Footer';
-import NotifyMeModal from '../components/NotifyMeModal';
 
 const LandingPage: React.FC = () => {
   const { i18n } = useTranslation();
-  const [isNotifyModalOpen, setIsNotifyModalOpen] = useState(false);
-
-  const handleNotifyClick = () => {
-    setIsNotifyModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsNotifyModalOpen(false);
-  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -36,7 +26,7 @@ const LandingPage: React.FC = () => {
       />
 
       {/* Hero Section - Above the fold */}
-      <HeroSection onNotifyClick={handleNotifyClick} />
+      <HeroSection />
 
       {/* Problem Section - Agitate pain points */}
       <ProblemSection />
@@ -48,16 +38,13 @@ const LandingPage: React.FC = () => {
       <FeaturesSection />
 
       {/* Pricing Section - Competitive pricing teaser */}
-      <PricingSection onNotifyClick={handleNotifyClick} />
+      <PricingSection />
 
       {/* Final CTA - Last chance to convert */}
-      <FinalCTA onNotifyClick={handleNotifyClick} />
+      <FinalCTA />
 
       {/* Footer - Legal, links, trust signals */}
       <Footer />
-
-      {/* Notify Me Modal */}
-      <NotifyMeModal isOpen={isNotifyModalOpen} onClose={handleCloseModal} />
     </div>
   );
 };

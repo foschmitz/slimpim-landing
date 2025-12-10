@@ -1,11 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-interface FinalCTAProps {
-  onNotifyClick: () => void;
-}
-
-const FinalCTA: React.FC<FinalCTAProps> = ({ onNotifyClick }) => {
+const FinalCTA: React.FC = () => {
   const { t } = useTranslation(['common']);
 
   return (
@@ -13,24 +9,26 @@ const FinalCTA: React.FC<FinalCTAProps> = ({ onNotifyClick }) => {
       <div className="max-w-4xl mx-auto text-center py-16">
         {/* Headline */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-          {t('finalCta.title', 'Don\'t Miss Out on SlimPIM.ai')}
+          {t('finalCta.title', 'Ready to Transform Your Product Management?')}
         </h2>
 
         {/* Subheadline */}
         <p className="text-xl md:text-2xl mb-12 text-gray-200">
           {t(
             'finalCta.subtitle',
-            'Join the waiting list and be the first to experience the future of product management'
+            'Join our beta program and experience the future of product management today'
           )}
         </p>
 
         {/* CTA Button */}
-        <button
-          onClick={onNotifyClick}
-          className="bg-accent text-white px-12 py-6 rounded-lg font-bold text-xl shadow-2xl hover:bg-accent-hover transition-all hover:scale-105 mb-8"
+        <a
+          href="https://app.slimpim.ai"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-accent text-white px-12 py-6 rounded-lg font-bold text-xl shadow-2xl hover:bg-accent-hover transition-all hover:scale-105 mb-8 inline-block"
         >
-          {t('finalCta.cta', '🔔 Notify Me When Available')}
-        </button>
+          {t('finalCta.cta', '🚀 Start Free Beta Trial')}
+        </a>
 
         {/* Trust Reinforcement */}
         <div className="flex flex-wrap justify-center items-center gap-6 text-gray-200 mb-8">
@@ -68,7 +66,7 @@ const FinalCTA: React.FC<FinalCTAProps> = ({ onNotifyClick }) => {
 
         {/* Urgency */}
         <div className="inline-block bg-accent text-white px-6 py-3 rounded-lg font-semibold">
-          {t('finalCta.urgency', '⏰ Limited Early Access Spots Available')}
+          {t('finalCta.urgency', '🎉 Beta Now Open')}
         </div>
 
         {/* Promise */}
@@ -76,7 +74,7 @@ const FinalCTA: React.FC<FinalCTAProps> = ({ onNotifyClick }) => {
           <p className="text-gray-200 text-lg">
             {t(
               'finalCta.promise',
-              'No spam, we promise. Just updates about our launch and exclusive early access.'
+              'Free during beta. No credit card required. Help us shape the product!'
             )}
           </p>
         </div>

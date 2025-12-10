@@ -68,9 +68,14 @@ const FeaturesSection: React.FC = () => {
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
               {t('cta.description')}
             </p>
-            <button className="btn-primary text-lg px-10 py-5">
+            <a
+              href="https://app.slimpim.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary text-lg px-10 py-5 inline-block"
+            >
               {t('cta.button')}
-            </button>
+            </a>
             <div className="mt-4 text-sm text-gray-500">
               {t('cta.subtext')}
             </div>

@@ -1,11 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-interface PricingSectionProps {
-  onNotifyClick: () => void;
-}
-
-const PricingSection: React.FC<PricingSectionProps> = ({ onNotifyClick }) => {
+const PricingSection: React.FC = () => {
   const { t } = useTranslation(['pricing']);
 
   return (
@@ -105,20 +101,22 @@ const PricingSection: React.FC<PricingSectionProps> = ({ onNotifyClick }) => {
         {/* CTA */}
         <div className="bg-gradient-to-r from-primary to-primary-hover rounded-2xl p-12 text-white">
           <h3 className="text-3xl font-bold mb-4">
-            {t('pricing:ctaTitle', 'Want to know our pricing?')}
+            {t('pricing:ctaTitle', 'Ready to try SlimPIM?')}
           </h3>
           <p className="text-xl mb-8 opacity-90">
             {t(
               'pricing:ctaSubtitle',
-              "Get notified when we launch and be the first to see our competitive pricing plans"
+              "Join our beta program and experience the power of modern PIM"
             )}
           </p>
-          <button
-            onClick={onNotifyClick}
-            className="bg-accent text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-accent-hover transition-colors shadow-xl"
+          <a
+            href="https://app.slimpim.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-accent text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-accent-hover transition-colors shadow-xl inline-block"
           >
-            {t('pricing:ctaButton', '🔔 Notify Me')}
-          </button>
+            {t('pricing:ctaButton', '🚀 Try Beta Now')}
+          </a>
         </div>
       </div>
     </section>

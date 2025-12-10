@@ -17,7 +17,6 @@ const Footer: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      // Use relative URL - Firebase hosting routes to Cloud Function
       const response = await fetch('/api/v1/newsletter/subscribe', {
         method: 'POST',
         headers: {
@@ -38,7 +37,6 @@ const Footer: React.FC = () => {
       setEmail('');
       setConsent(false);
 
-      // Reset success message after 5 seconds
       setTimeout(() => {
         setIsSuccess(false);
       }, 5000);
