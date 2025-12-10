@@ -1,13 +1,13 @@
 {
-  "comingSoonBadge": "Demnächst verfügbar",
+  "betaBadge": "Beta verfügbar",
   "headline": "Schluss mit Excel-Chaos.",
   "headlineHighlight": "5.000+ Produkte über alle Kanäle verwalten.",
   "subheadline": "Das leichtgewichtige PIM für E-Commerce & Multi-Channel. Produkte von einem Ort zu Shopify, WooCommerce, Amazon synchronisieren.",
   "cta": {
-    "primary": "🔔 Benachrichtigen, wenn verfügbar",
+    "primary": "🚀 Beta jetzt testen",
     "secondary": "Demo buchen"
   },
-  "ctaSubtext": "Seien Sie unter den Ersten, die die Zukunft des Produktmanagements erleben",
+  "ctaSubtext": "Testen Sie unsere Beta und gestalten Sie die Zukunft des Produktmanagements mit",
   "stats": {
     "ai": "Intelligente Automatisierung",
     "simple": "Keine Komplexität",

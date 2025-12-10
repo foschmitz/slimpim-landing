@@ -1,6 +1,10 @@
 {
+  "badge": "Pricing",
   "title": "Simple, Transparent Pricing",
   "subtitle": "Start free, upgrade as you grow. No hidden fees.",
+  "ctaTitle": "Ready to try SlimPIM?",
+  "ctaSubtitle": "Join our beta program and experience the power of modern PIM",
+  "ctaButton": "🚀 Try Beta Now",
   "tiers": [
     {
       "name": "Starter",

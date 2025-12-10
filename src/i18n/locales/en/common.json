@@ -93,9 +93,13 @@
     }
   },
   "finalCta": {
-    "title": "Ready to Stop Spreadsheet Chaos?",
-    "subtitle": "Join 1,000+ e-commerce sellers who ditched Excel for SlimPIM",
-    "cta": "Start Free Trial - 14 Days",
-    "subtext": "No credit card required. Cancel anytime. Setup in 5 minutes."
+    "title": "Ready to Transform Your Product Management?",
+    "subtitle": "Join our beta program and experience the future of product management today",
+    "cta": "🚀 Start Free Beta Trial",
+    "benefit1": "Early Access",
+    "benefit2": "Special Launch Pricing",
+    "benefit3": "Exclusive Updates",
+    "urgency": "🎉 Beta Now Open",
+    "promise": "Free during beta. No credit card required. Help us shape the product!"
   }
 }
